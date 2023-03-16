@@ -1,23 +1,24 @@
 <script>
-    // export let name;
-    // export let title;
     /**
 	 * @type {string}
 	 */
      export let quote;
-    // export let image;
-    // export let score;
+     export const user = {
+         name: "John Doe",
+         position: "CEO, Company",
+         image: "https://via.placeholder.com/150",
+     };
 </script>
 
-<div class="py-10 px-8 rounded-md flex gap-6 bg-card w-full">
+<div class="py-10 px-8 rounded-md gap-6 bg-card w-full">
     <p class="leading-8">
         {quote}
     </p>
-    <!-- <div class="flex gap-4 items-center">
-        <img src="https://via.placeholder.com/150" alt="user" class="rounded-full w-12 h-12">
+    <div class="flex gap-4 items-center pt-6">
+        <img src={user.image} alt="user" class="rounded-full w-12 h-12">
         <div>
-            <div class="font-bold">John Doe</div>
-            <div class="text-gray-500">CEO, Company</div>
+            <div class="font-bold">{user.name}</div>
+            <div class="text-gray-500">{user.position}</div>
         </div>
-    </div> -->
+    </div>
 </div>
